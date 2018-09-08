@@ -164,6 +164,7 @@ def turn (board)
   while !index.between(1,9)
     print "Invalid entry.  Enter [1-9]:  "
     input = gets
+    puts " "
     index = input_to_index(input)
   end
   if (valid_move?(board, index))
