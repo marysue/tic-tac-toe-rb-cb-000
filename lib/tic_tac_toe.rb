@@ -136,7 +136,7 @@ def display_board(board)
   puts(" ")
   puts(" ")
 end
-def player_move(board, index, current_player = "X")
+def player_move(board, index, current_player) #current_player = "X"
   #assumes position_taken? = no, and valid_move? = yes, and index is valid
   board[index] = current_player
 end
