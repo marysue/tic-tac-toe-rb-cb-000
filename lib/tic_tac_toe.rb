@@ -155,7 +155,10 @@ def get_new_token(token)
 end
 def turn (board)
   token = 'X'
-  input = get_input(token)
+  #input = get_input(token)
+  print "Enter cell [1-9]:  "
+  input = gets
+  puts " "
   index = input_to_index(input) #just subtracts 1 from any value
   if (valid_move?(board, index))
     player_move(board, index, token)
