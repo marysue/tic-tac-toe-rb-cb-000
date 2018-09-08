@@ -154,9 +154,10 @@ def turn (board)
   print "Enter cell [1-9]:  "
   input = gets
   puts " "
-
   index = input_to_index(input) #just subtracts 1 from any value
-  while !index.between(0,8)
+  
+  #while !index.between(0,8)
+  while index < 0 || index > 8
     print "Invalid entry.  Enter [1-9]:  "
     input = gets
     puts " "
