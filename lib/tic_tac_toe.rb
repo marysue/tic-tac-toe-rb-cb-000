@@ -71,13 +71,6 @@ end
 def valid_move?(board, index)
   puts "valid_move?  board:  #{board}"
   puts "valid_move?  index:  #{index}"
-  if !index.between?(0,8)
-    puts "[valid_move]: Invalid index:  #{index}"
-  end
-
-  if position_taken?(board, index)
-    puts "[valid_move]: Position taken:  #{index}"
-  end
 
   return (index.between?(0,8) && !position_taken?(board, index))
 end
