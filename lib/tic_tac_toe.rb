@@ -69,6 +69,8 @@ def over?(board)
     end
 end
 def valid_move?(board, index)
+  puts "valid_move?  board:  #{board}"
+  puts "valid_move?  index:  #{index}"
   if !index.between?(0,8)
     puts "[valid_move]: Invalid index:  #{index}"
   end
@@ -217,4 +219,3 @@ def input_to_index(input)
     return -1
   end
 end
-
