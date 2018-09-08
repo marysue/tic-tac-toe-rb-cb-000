@@ -159,7 +159,13 @@ def turn (board)
   print "Enter cell [1-9]:  "
   input = gets
   puts " "
+
   index = input_to_index(input) #just subtracts 1 from any value
+  while !index.between(1,9)
+    print "Invalid entry.  Enter [1-9]:  "
+    input = gets
+    index = input_to_index(input)
+  end
   if (valid_move?(board, index))
     player_move(board, index, token)
     #token = get_new_token(token)
