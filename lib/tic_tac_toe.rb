@@ -165,7 +165,7 @@ def turn (board)
     success = false
   end
   return success
-  
+
   #NOT SURE WHICH VERSION WILL WORK BEST
   #  index = -1
   #while index < 0
