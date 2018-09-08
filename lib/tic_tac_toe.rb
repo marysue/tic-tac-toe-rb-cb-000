@@ -161,7 +161,7 @@ def turn (board)
   puts " "
 
   index = input_to_index(input) #just subtracts 1 from any value
-  while !index.between(1,9)
+  while !index.between(0,8)
     print "Invalid entry.  Enter [1-9]:  "
     input = gets
     puts " "
